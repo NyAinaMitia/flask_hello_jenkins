@@ -7,8 +7,8 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!\n'
 
-@app.route('/hello/<username>')
-def hello_user(username):
+@app.route('/feature/<username>')
+def feature_user(username):
     return 'Hello %s!\n' % username
 
 if __name__ == '__main__':
